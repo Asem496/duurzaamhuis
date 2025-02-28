@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Eco Warriors</title>
+ <link rel="shortcut icon" href="favicon/website/android-chrome-192x192.png" type="image/x-icon">
+ <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+ <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+
+<body>
+    <header>
+        <img class="logo" src="img/ECOWARRIORS[1].svg" alt="logo van eco-warriors">
+    </header>
+    <div class="weer">
+        <span id="dag-deel"></span> | 🌤 <span id="weather">Licht bewolkt</span>
+    </div>
+    <nav>
+        <button>Home</button>
+        <button>Weer</button>
+        <button> Duurzaamheidstips</button>
+    </nav>
+</body>
+
+<main>
+    <section class="asem">
+        <div class="temperatuur">
+            <h3> Temperatuur</h3>
+            <div class="temp-box">
+            <span id="kamer-temp">20</span>°C
+<div class="Zonsopkomst-ondergang">
+    <h3>Zonsopkomst en -ondegang</h3>
+    
+    
+</div>
+        </div>
+        </div>
+        
+        <section class="ashraf">
+             <div class="energie-grafiek">
+                <h3>Energieverbruik</h3>
+                <canvas id="energyChart"></canvas>
+            </div>
+            <div class="lights">
+                <h3>Lampen in huis</h3>
+                <div class="licht-controle">
+                    <label>Woonkamer</label>
+                    <button class="lamp" onclick="toggleLamp(this)">🟢</button>
+                </div>
+                <div class="licht-controle">
+                    <label>Slaapkamer</label>
+                    <button class="lamp" onclick="toggleLamp(this)">🟢</button>
+                </div>
+                <div class="licht-control">
+                    <label>Badkamer</label>
+                    <button class="lamp" onclick="toggleLamp(this)">🔴</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="illia">
+            <div class="zonne-engergie">
+            <h3>Zonnepanelen opbrengst</h3>
+            <canvas id="Zonne-grafiek"></canvas>
+        </div>
+        </section>
+</main>
+<footer>
+    <button>Contact</button>
+    <button>PrivacyBeleid</button>
+    <button>Over ons</button>
+</footer>
+<script src="main.js " defer></script>
+</html>

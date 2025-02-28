@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background: #f0f7f4;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2c6e49;
+  color: white;
+  padding: 1.5rem;
+}
+ nav button{
+  background: white;
+  border: none;
+  padding: 1rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+
+ }
+
+ main{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+ }
+
+ .asem, .ashraf, .illia{
+background: white;
+padding: 2rem;
+border-radius: 1rem;
+text-align: center;
+box-shadow: 0 4rem 8rem rgb(0, 0, 0, 0.1);
+ }
