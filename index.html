@@ -1,85 +1,94 @@
+
 <!DOCTYPE html>
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Eco Warriors</title>
- <link rel="shortcut icon" href="favicon/website/android-chrome-192x192.png" type="image/x-icon">
- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
- <link rel="stylesheet" href="./css/styles.css">
+    <title>Eco Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
 </head>
-
-
 <body>
-    <header>
-        <img class="logo" src="img/ECOWARRIORS[1].svg" alt="logo van eco-warriors">
-    </header>
-    <div class="weer">
-        <span id="dag-deel"></span> | 🌤 <span id="weather">Licht bewolkt</span>
-    </div>
-    <nav>
-        <button>Home</button>
-        <button>Weer</button>
-        <button> Duurzaamheidstips</button>
-    </nav>
-</body>
 
-<main>
-    <section class="asem">
-        <div class="temperatuur">
-            <h3> Temperatuur</h3>
-            <div class="temp-box">
-            <span id="kamer-temp">20</span>°C
-<div class="Zonsopkomst-ondergang">
-    <h3>Zonsopkomst en -ondegang</h3>
-    
-    
-</div>
-        </div>
-        </div>
-        
-        <section class="ashraf">
-             <div class="energie-grafiek">
+    <header>
+        <img class="logo" src="img/ECOWARRIORS[1].svg" alt="">
+           <div class="weather">
+              <span id="date-time"></span> | 🌤 <span id="weather">Licht bewolkt</span>
+          </div>
+          <nav>
+              <button>Home</button>
+              <button>Instellingen</button>
+              <button>Weer</button>
+          </nav>
+      </header>
+
+     <main>
+         <section class="asem">
+            <h2>ASEM</h2>
+            <div class="temperature">
+                <h3>Temperatuur</h3>
+                <div class="temp-box">
+                    <span id="roomTemp">20</span>°C
+                </div>
+            </div>
+        </section>
+
+         <section class="ashraf">
+            <h2>ASHRAF</h2>
+            <div class="current-temp">
+                <h3>Actuele buiten temperatuur</h3>
+                <div class="temp-box">
+                    <span id="outsideTemp">5</span>°C
+                </div>
+            </div>
+            <div class="energy-chart">
                 <h3>Energieverbruik</h3>
                 <canvas id="energyChart"></canvas>
             </div>
             <div class="lights">
                 <h3>Lampen in huis</h3>
-                <div class="licht-controle">
+                <div class="light-control">
                     <label>Woonkamer</label>
                     <button class="lamp" onclick="toggleLamp(this)">🟢</button>
                 </div>
-                <div class="licht-controle">
+                <div class="light-control">
                     <label>Slaapkamer</label>
                     <button class="lamp" onclick="toggleLamp(this)">🟢</button>
                 </div>
-                <div class="licht-control">
+                <div class="light-control">
                     <label>Badkamer</label>
                     <button class="lamp" onclick="toggleLamp(this)">🔴</button>
                 </div>
             </div>
         </section>
-        
-        <section class="illia">
-            <div class="zonne-engergie">
-            <h3>Zonnepanelen opbrengst</h3>
-            <canvas id="Zonne-grafiek"></canvas>
-        </div>
+
+         <section class="illia">
+            <h2>Illia</h2>
+            <div class="solar-chart">
+                <h3>Zonnepanelen Opbrengst</h3>
+                <canvas id="solarChart"></canvas>
 
 
-    <div class="Weersverwachtings" id="weerverwachting">
-        <h3>Weersverwachtings</h3>
-        
+
+              <divc class="weerverwachting" id="weerverwachting">
+                <h2>Weerverwachting</h2>
+
+                
+              </div>      
 
 
-    </div>
+            </div>
         </section>
-</main>
-<footer>
-    <button>Contact</button>
-    <button>PrivacyBeleid</button>
-    <button>Over ons</button>
-</footer>
-<script src="main.js " defer></script>
+    </main>
+
+     <footer>
+        <ul>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacybeleid</a></li>
+            <li><a href="#">Over ons</a></li>
+        </ul>
+    </footer>
+
+    <script src="main.js" defer></script>
+</body>
 </html>
